@@ -7,6 +7,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -41,7 +42,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng stirling = new LatLng(56.116550, -3.936858);
         LatLng thurso = new LatLng(58.593500, -3.522072);
 
-        mMap.addMarker(new MarkerOptions().position(aberdeen).title("Aberdeen"));
+        mMap.addMarker(new MarkerOptions()
+                .position(aberdeen)
+                .title("Aberdeen"))
+        .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.clearnight));
+
         mMap.addMarker(new MarkerOptions().position(dundee).title("Dundee"));
         mMap.addMarker(new MarkerOptions().position(edinburgh).title("Edinburgh"));
         mMap.addMarker(new MarkerOptions().position(fortWillaim).title("Fort Willaim"));
@@ -50,6 +55,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(perth).title("Perth"));
         mMap.addMarker(new MarkerOptions().position(stirling).title("Stirling"));
         mMap.addMarker(new MarkerOptions().position(thurso).title("Thurso"));
+
+
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(57, -4.6),6.5f));
     }
