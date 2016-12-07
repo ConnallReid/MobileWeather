@@ -44,7 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(aberdeen).title("Aberdeen"));
         mMap.addMarker(new MarkerOptions().position(dundee).title("Dundee"));
         mMap.addMarker(new MarkerOptions().position(edinburgh).title("Edinburgh"));
-        mMap.addMarker(new MarkerOptions().position(fortWillaim).title("FortWillaim"));
+        mMap.addMarker(new MarkerOptions().position(fortWillaim).title("Fort Willaim"));
         mMap.addMarker(new MarkerOptions().position(glasgow).title("Glasgow"));
         mMap.addMarker(new MarkerOptions().position(inverness).title("Inverness"));
         mMap.addMarker(new MarkerOptions().position(perth).title("Perth"));

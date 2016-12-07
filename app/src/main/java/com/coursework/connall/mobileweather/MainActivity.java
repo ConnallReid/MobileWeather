@@ -30,14 +30,12 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -55,8 +53,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -64,7 +60,6 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_Home) {
-            //
 
         } else if (id == R.id.nav_Map) {
             Intent intent = new Intent(this,MapsActivity.class);
@@ -73,7 +68,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this,CityListActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_Favorite) {
-
+            Intent intent = new Intent(this,FavoriteActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_About) {
 
         } else if (id == R.id.nav_Settings) {

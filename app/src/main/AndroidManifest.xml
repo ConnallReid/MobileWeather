@@ -24,7 +24,7 @@
         </activity>
         <activity android:name="com.coursework.connall.mobileweather.CityListActivity"/>
         <activity android:name="com.coursework.connall.mobileweather.MapsActivity"/>
-
+        <activity android:name="com.coursework.connall.mobileweather.FavoriteActivity"/>
     </application>
 
 </manifest>

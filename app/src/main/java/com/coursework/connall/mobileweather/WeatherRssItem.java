@@ -13,6 +13,7 @@ public class WeatherRssItem {
     private String WeatherType;
     private String MaxTemp;
     private String MinTemp;
+    private String CityName;
  public WeatherRssItem(){
      this.Title="";
      this.Description="";
@@ -20,6 +21,7 @@ public class WeatherRssItem {
      this.WeatherType="";
      this.MaxTemp="";
      this.MinTemp="";
+     this.CityName="";
  }
     public String getTitle(){
         return Title;
@@ -69,4 +71,7 @@ public class WeatherRssItem {
     public void setMinTemp(String Ntitle){
         this.MinTemp=Ntitle;
     }
+    public String getCityName(){return CityName;};
+    public void setCityName(String cityName){this.CityName=cityName;}
+
 }
