@@ -1,5 +1,7 @@
 package com.coursework.connall.mobileweather;
 
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -19,12 +21,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    FragmentManager fmAboutDialogue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        fmAboutDialogue = this.getFragmentManager();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -71,9 +76,9 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this,FavoriteActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_About) {
-
-        } else if (id == R.id.nav_Settings) {
-
+            DialogFragment mcAboutDlg = new AboutDialogue();
+            mcAboutDlg.show(fmAboutDialogue, "menu");
+            return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

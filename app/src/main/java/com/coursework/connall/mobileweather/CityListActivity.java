@@ -72,7 +72,7 @@ public class CityListActivity extends AppCompatActivity  {
             WeatherRssItem Info = new WeatherRssItem();
                 Info.setCityName(WeatherList.get(i).getCityName());
             Info.setTitle(WeatherList.get(i).getTitle());
-            Info.setDescription(WeatherList.get(i).getDescription());
+            Info.setDescription(WeatherList.get(i).getWeatherType());
             alist.add(Info);}
         }
         Log.e("Testing",WeatherList.get(3).getWeatherType());

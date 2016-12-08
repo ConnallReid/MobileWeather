@@ -2,8 +2,53 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/aberdeen"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Aberdeen"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/dundee"
+        android:orderInCategory="100"
+        android:title="Dundee"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edinburgh"
+        android:orderInCategory="100"
+        android:title="Edinburgh"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fortwillaim"
+        android:orderInCategory="100"
+        android:title="Fort Willaim"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/glasgow"
+        android:orderInCategory="100"
+        android:title="Glasgow"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/inverness"
+        android:orderInCategory="100"
+        android:title="Inverness"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/perth"
+        android:orderInCategory="100"
+        android:title="Perth"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/stirling"
+        android:orderInCategory="100"
+        android:title="Inverness"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Stirling"
+        android:orderInCategory="100"
+        android:title="Inverness"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/thurso"
+        android:orderInCategory="100"
+        android:title="Thurso"
         app:showAsAction="never" />
 </menu>

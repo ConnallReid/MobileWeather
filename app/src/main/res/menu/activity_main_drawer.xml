@@ -18,19 +18,10 @@
             android:id="@+id/nav_Favorite"
             android:icon="@drawable/ic_menu_manage"
             android:title="Favorite" />
+
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/ic_menu_share"
+            android:title="About" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_About"
-                android:icon="@drawable/ic_menu_share"
-                android:title="About" />
-            <item
-                android:id="@+id/nav_Settings"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Settings" />
-        </menu>
-    </item>
-
 </menu>

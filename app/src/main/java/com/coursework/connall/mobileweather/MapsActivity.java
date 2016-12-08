@@ -42,21 +42,33 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng stirling = new LatLng(56.116550, -3.936858);
         LatLng thurso = new LatLng(58.593500, -3.522072);
 
-        mMap.addMarker(new MarkerOptions()
-                .position(aberdeen)
-                .title("Aberdeen"))
-        .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.clearnight));
 
-        mMap.addMarker(new MarkerOptions().position(dundee).title("Dundee"));
-        mMap.addMarker(new MarkerOptions().position(edinburgh).title("Edinburgh"));
-        mMap.addMarker(new MarkerOptions().position(fortWillaim).title("Fort Willaim"));
-        mMap.addMarker(new MarkerOptions().position(glasgow).title("Glasgow"));
-        mMap.addMarker(new MarkerOptions().position(inverness).title("Inverness"));
-        mMap.addMarker(new MarkerOptions().position(perth).title("Perth"));
-        mMap.addMarker(new MarkerOptions().position(stirling).title("Stirling"));
-        mMap.addMarker(new MarkerOptions().position(thurso).title("Thurso"));
+        mMap.addMarker(new MarkerOptions().position(aberdeen).title("Aberdeen"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
 
+        mMap.addMarker(new MarkerOptions().position(dundee).title("Dundee"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
 
+        mMap.addMarker(new MarkerOptions().position(edinburgh).title("Edinburgh"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
+
+        mMap.addMarker(new MarkerOptions().position(fortWillaim).title("Fort Willaim"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.cloudy));
+
+        mMap.addMarker(new MarkerOptions().position(glasgow).title("Glasgow"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
+
+        mMap.addMarker(new MarkerOptions().position(inverness).title("Inverness"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
+
+        mMap.addMarker(new MarkerOptions().position(perth).title("Perth"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
+
+        mMap.addMarker(new MarkerOptions().position(stirling).title("Stirling"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
+
+        mMap.addMarker(new MarkerOptions().position(thurso).title("Thurso"))
+                .setIcon(BitmapDescriptorFactory.fromResource(R.drawable.sunnyintervals));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(57, -4.6),6.5f));
     }
