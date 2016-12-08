@@ -39,12 +39,7 @@
     <item
         android:id="@+id/stirling"
         android:orderInCategory="100"
-        android:title="Inverness"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/Stirling"
-        android:orderInCategory="100"
-        android:title="Inverness"
+        android:title="Stirling"
         app:showAsAction="never" />
     <item
         android:id="@+id/thurso"
