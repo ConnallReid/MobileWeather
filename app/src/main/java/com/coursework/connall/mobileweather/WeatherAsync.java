@@ -1,7 +1,6 @@
 package com.coursework.connall.mobileweather;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -111,7 +110,6 @@ public class WeatherAsync extends AsyncTask<String,Integer,LinkedList<WeatherRss
             Info.setDescription(returnlist.get(i).getDescription());
             alist.add(Info);
         }
-        //Log.e("Hello",""+alist.get(10).getTitle());
         return alist;
     }
     @Override

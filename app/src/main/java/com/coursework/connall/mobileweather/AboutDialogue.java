@@ -22,7 +22,7 @@ public class AboutDialogue extends DialogFragment {
             }
         });
         mcAboutDialog.setTitle("About");
-        //mcAboutDialog.setIcon(R.drawable.ic_about);
+
         // Create the AlertDialog object and return it
         return mcAboutDialog.create();
     }

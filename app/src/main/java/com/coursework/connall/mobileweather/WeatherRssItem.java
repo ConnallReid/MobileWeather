@@ -1,7 +1,5 @@
 package com.coursework.connall.mobileweather;
 
-import android.util.Log;
-
 /**
  * Created by Connall on 05/12/2016.
  */

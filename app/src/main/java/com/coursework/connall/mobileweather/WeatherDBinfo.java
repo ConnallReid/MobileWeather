@@ -12,18 +12,13 @@ public class WeatherDBinfo implements Serializable {
 // Declare variables etc.
 // *********************************************
 
-
     private String WeatherImg;
     private String WeatherDes;
-
 
     private static final long serialVersionUID = 0L;
 // *********************************************
 // Declare getters and setters etc.
 // *********************************************
-
-
-
 
     public String getWeatherImg() {
         return WeatherImg;

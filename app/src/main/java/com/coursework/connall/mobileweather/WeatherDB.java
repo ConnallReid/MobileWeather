@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -50,45 +49,29 @@ public class WeatherDB extends SQLiteOpenHelper {
                 onCreate(sqLiteDatabase);
             }
         }
-        // ================================================================================
-        // Creates a empty database on the system and rewrites it with your own database.
-        // ================================================================================
+
         public void dbCreate() throws IOException {
 
             boolean dbExist = dbCheck();
 
             if(!dbExist){
-                //By calling this method an empty database will be created into the default system path
-                //of your application so we can overwrite that database with our database.
                 this.getReadableDatabase();
 
                 try {
-
                     copyDBFromAssets();
-
                 } catch (IOException e) {
 
                     throw new Error("Error copying database");
-
                 }
             }
         }
-        // ============================================================================================
-        // Check if the database already exist to avoid re-copying the file each time you open the application.
-        // @return true if it exists, false if it doesn't
-        // ============================================================================================
-        private boolean dbCheck(){
 
-            //SQLiteDatabase db = null;
+        private boolean dbCheck(){
 
             File dbFile = appContext.getDatabasePath(DB_NAME);
             return dbFile.exists();
         }
-        // ============================================================================================
-        // Copies your database from your local assets-folder to the just created empty database in the
-        // system folder, from where it can be accessed and handled.
-        // This is done by transfering bytestream.
-        // ============================================================================================
+
         private void copyDBFromAssets() throws IOException{
 
             InputStream dbInput = null;
@@ -116,6 +99,7 @@ public class WeatherDB extends SQLiteOpenHelper {
                 throw new Error("Problems copying DB!");
             }
         }
+
         public WeatherDBinfo FindWeatherIcon(String IconName) {
 
             String query = "Select * FROM " + TBL_WEATHERDATA + " WHERE " + COL__WEATHERCON + " =  \"" + IconName + "\"";
